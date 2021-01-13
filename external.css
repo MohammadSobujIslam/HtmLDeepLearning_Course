@@ -1,0 +1,102 @@
+h3{
+    background-color: blueviolet;
+    font-size: large;
+    font-family: verdana;
+    border:4px solid green;
+    padding:30px;
+    margin:70px;
+}
+p{
+    color: darkgoldenrod;
+    font-size: 200%;
+    text-align: center;
+}
+a{
+    font-size:50px;
+    color:red;
+    text-align:center;
+}
+strong{
+    font-size: 50px;
+    color: blue;
+}
+h2{
+    font-size: 50px;
+    padding: 3px solid yellow;
+}
+#mamuni:link {
+    color: cyan;
+    background-color: cyan;
+    text-decoration: none;
+  }
+  #mamuni:visited {
+    color: blue;
+    background-color: rgb(105, 128, 0);
+    text-decoration:indianred;
+  }
+  #mamuni:hover {
+    color: whitesmoke;
+    background-color:  rgb(119, 128, 0);
+    text-decoration: underline;
+  }
+  #mamuni:active {
+    color: yellow;
+    background-color:  green;
+    text-decoration: underline;}
+    #group:link{
+        color: burlywood;
+        font-size: 50px;
+        text-align:center;
+        background-color: brown;
+        text-decoration: dashed;
+        padding: 20px;
+        margin: 10%;
+        border: 6px solid darkgreen;
+    }
+    #group:visited{
+        color: #000;
+        background-color: white;
+        text-align: center;
+        text-decoration: overline;
+
+    }
+    #group:hover{
+        counter-reset: red;
+        color:pink;
+        text-decoration: solid;
+    }
+    #group:active{
+        color: aqua;
+        background-color: #000;
+        text-align: center;
+        text-shadow: 4in;
+        text-decoration: overline;
+    }
+    #image{
+        font-size:30px;
+        color: green;
+        background-color: black;
+    }
+    #mamu{
+        width: 200;
+        height: 350;
+        padding: 20px;
+        margin: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;  
+         
+    }
+    #mydream,strong{
+       background-color: black;
+        border: 10px solid rgb(138, 41, 41);
+    }
+    i{
+        border:4px solid pink;
+        font-size: 50px;
+        padding: 40px;
+        margin: 40px;
+        color:darkorchid;
+
+        
+    }
