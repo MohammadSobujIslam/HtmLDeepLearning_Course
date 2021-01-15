@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML From create</title>
+   <style>
+       label{
+           font-size: 25px;
+           color:deeppink;
+       }
+       input{
+           padding: 8px;
+           color:black;
+           font-size: 20px;
+           border: 2px solid red;
+
+       }
+       #headingone{
+           font-size: 40px;
+           text-align: left;
+           color: rebeccapurple;
+           border: 4px solid rebeccapurple;
+           background-color: aqua;
+                  }
+   </style>
+</head>
+<body>
+    <h1 id="headingone">HTML Froms Creating Procedure AlL</h1>
+    <form >
+        <label for="fname">First Name:</label><br>
+        <input type="text"   id="fname" value="Firstname">
+        <br><br>
+        <label for="lname" >Last Name:</label><br>
+        <input type="text" id="lname" value="Lastname">
+    </form>
+    <p>Note that the form itself is not visible.</p>
+
+<p>Also note that the default width of text input fields is 20 characters.</p>
+<h1>Radio button procedure</h1>
+<form >
+    <input type="radio" id="maleid" name="gender" value="male">
+    <label for="maleid"> Male</label><br>
+    <input type="radio" id="femaleid" name="gender" value="female">
+    <label for="femaleid">Female</label><br>
+    <input type="radio" name="other" id="otherid" value="other">
+    <label for="otherid">Other</label>
+
+</form>
+<h1>Checkbox procedure</h1>
+<p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+<form >
+    <input type="checkbox" name="vehicale1" id="v1" value="bike">
+    <label for="v1">I have a Bike</label><br>
+    <input type="checkbox" name="vehicale2" id="v2" value="Car">
+    <label for="v2">I have a Car</label><br>
+    <input type="checkbox" name="vehicale3" id="v3" value="Boat">
+    <label for="v3">I have a Boat</label><br>
+    <input type="submit"  value="Submit">
+  
+</form>
+
+<h1>The name attribute </h1>
+<form action="/Image.html" target="_blank" method="get" autocomplete="on" novalidate>
+    <label for="nameid">First Name:</label>
+    <br>
+    <input type="text" id="nameid" name="jhon" value="jhon">
+    <br>
+    <br>
+    <input type="submit" value="submit">
+    <input type="reset" value="Reset">
+</form>
+<p><strong>Note:</strong> The novalidate attribute of the form tag is not supported in Safari 10 (or earlier).</p>
+
+<h2>The select Element</h2>
+
+<p>The select element defines a drop-down list:</p>
+<form action="/Image.html">
+    <label for="carname">Choose You any one car:</label>
+    <select name="car" id="carname" size="4" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+        <option value="bike">Bike</option>
+        <option value="bmw" selected>BMW</option>
+
+    </select>
+    <input type="submit" value="Submit">
+</form>
+<h1>HTML Form element all explanation</h1>
+<h2>Textarea</h2>
+<p>The textarea element defines a multi-line input field.</p>
+<form action="HtmlClass.html">
+    <textarea name="Message" id="messageid"  style="width: 250px;height: 300px;">
+        The car playing in the garden.
+    </textarea>
+    <br><br>
+    <input type="Submit">
+</form>
+<h2>The button Element</h2>
+<button  type="button" onclick="alert('Hello world HI kemon aso')">Click me !</button>
+<h1>Please check Your button Work</h1>
+<h2>Grouping Form Data with Fieldset</h2>
+
+<p>The fieldset element is used to group related data in a form, and the legend element defines a caption for the fieldset element.</p>
+<form action="Image.html">
+    <fieldset>
+        <legend>Personalia:</legend>
+        <label for="firsname">First Name:</label><br>
+        <input type="text" id="firstname" name="fname" value="sobuj">
+        <br>
+        <label for="lastname">Last Name:</label><br>
+        <input type="text" name="lname" id="lastname" value="islam">
+        <br><br>
+        <input type="submit" value="SubmitFinal">
+
+
+    </fieldset>
+    <br>
+    <fieldset>
+        <p>sobuj</p>
+    </fieldset>
+
+    <h2>The datalist Element</h2>
+
+<p>The datalist element specifies a list of pre-defined options for an input element.</p>
+<form action="Image.html" target="_blank">
+    <input list="browsers" name="browsers" >
+    <datalist id="browsers">
+        <option value="Internet Explorer"></option>
+        <option value="Chrome"></option>
+        <option value="Facebook"></option>
+        <option value="Opera"></option>
+        <option value="Amazon"></option>
+        <option value="Alibaba"></option>
+        <option value="Microsoft"></option>
+        <option value="Firefox"></option>
+        <option value="Safari"></option>
+        <option value="Youtube"></option>
+        <option value="Instagarm"></option>
+
+    </datalist>
+    <input type="submit">
+</form>
+
+<p><b>Note:</b> The datalist tag is not supported in Safari prior version 12.1.</p>
+
+<h2>The output Element</h2>
+<p>The output element represents the result of a calculation.</p>
+a
+
+<form action="/HtmlClass.html" 
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    0
+    <input type="range"  id="a" name="a" value="50">
+    100+
+    <input type="number"  id="b" name="b" value="50">
+    =
+    <output name="x" for="a b"></output>
+    <br><br>
+    <input type="submit">
+   
+</form>
+<p><strong>Note:</strong> The output element is not supported in Edge prior version 13.</p>
+
+
+a
+
+<form action="/action_page.php"
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+
+<p><strong>Note:</strong> The output element is not supported in Edge prior version 13.</p>
+
+</form>
+    
+</body>
+</html>

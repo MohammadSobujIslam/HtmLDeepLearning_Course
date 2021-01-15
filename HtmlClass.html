@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Class and Id </title>
+    <style>
+        #h1{
+            color: blue;
+            text-align: center;
+        }
+        .city{
+            background-color: tomato;
+            color: aliceblue;
+            border: 3px solid black;
+            padding: 10px;
+            font-size: 40px;
+        }
+        .city:hover{
+            background-color:deeppink;
+            color: black;
+        }
+        .twon{
+            background-color: chartreuse;
+            color:navy;
+            font-size: 40px;
+            border: 3px solid red;
+            padding: 10px;
+        }
+        .twon:hover{
+            background-color:deepskyblue;
+            color: black;
+
+        }
+        .spans1{
+            font-size: 200%;
+            color: red;
+        }
+        .main{
+            background-color: green;
+        }
+        .other{
+           
+            background-color: gold;
+        }
+        #myheadid{
+            background-color: lightblue;
+            color: black;
+            padding: 50px;
+            text-align: center;
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id='h1'>HTML Class and Id section</h1>
+    <div class="city">
+        <h2>London</h2>
+        <p>London is the capital of England.</p>
+        </div> 
+        
+        <div class="city">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p>
+        </div>
+        
+        <div class="twon">
+        <h2>Tokyo</h2>
+        <p>Tokyo is the capital of Japan.</p>
+        </div>
+        <h1>My <span class="spans1">important</span> heading</h1>
+        <p>This is some <span class="spans1">important</span>text.</p>
+        <h2>The class Attribute</h2>
+<p>Use CSS to style elements with the class name "city":</p>
+
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+<h2>Multiple Classes</h2>
+<p>Here, all three h2 elements belongs to the "city" class. In addition, London also belongs to the "main" class, which center-aligns the text.</p>
+
+<h2 class="city main">London</h2>
+<h2 class="city">Paris</h2>
+<h2 class="city other">Tokyo</h2>
+<h2>Different Elements Can Share Same Class</h2>
+
+<p>Even if the two elements do not have the same tag name, they can both point to the same class, and get the same CSS styling:</p>
+
+<h2 class="city">Paris</h2>
+<p class="city">Paris is the capital of France.</p>
+<h1 style="color: red;">javascript work</h1>
+<h2>Use of The class Attribute in JavaScript</h2>
+<p>Click the button to hide all elements with class name "twon":</p>
+<button onclick="sobuj()">Hide elements</button>
+
+<h2 class="twon">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="twon">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="twon">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+<script>
+    function sobuj() {
+        var a = document.getElementsByClassName("twon");
+        for(var i = 0; i < a.length; i++){
+            a [i] . style.display = "none";
+        }
+    }
+</script>
+<h1 style="text-align: center;font-size: 50px; background-color: fuchsia;padding: 40px;">Id Section Part</h1>
+
+<h2>The id Attribute</h2>
+<p>Use CSS to style an element with the id "myHeader":</p>
+
+<h1 id="myheadid">My header style </h1>
+
+<h1 >My header </h1>
+
+<h2 id="myheadid">My style</h2>
+<h1>Html Bookmarks</h1>
+<p><a href="#c4"> Jump to chapter 4</a></p>
+<p><a href="#c6">jump to chapter 6</a></p>
+<p><a href="#c10">jump to chapter 10</a></p>
+
+
+<h2>Chapter 1</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 2</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 3</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="c4">Chapter 4</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 5</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="c6">Chapter 6</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 7</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 8</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 9</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="c10">Chapter 10</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 11</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 12</h2>
+<p>This chapter explains ba bla bla</p>
+
+
+
+<h1>Using The id Attribute in JavaScript</h1>
+
+<p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
+  
+<h1 id="myheaderid">Hello World</h1>
+<button onclick="ChangeText()">Change Text</button>
+<script>
+    function ChangeText(){
+        document.getElementById("myheaderid").innerHTML = "Have a nice day";
+    }
+</script>
+<h1>Complete My class and id topics</h1>
+
+<h2>HTML Iframes</h2>
+<p>You can use the height and width attributes to specify the size of the iframe:</p> 
+<iframe src="Basic.html" frameborder="15" title="iframe example" width="400" height="500"></iframe>
+<iframe src="mydream.jpg" frameborder="10px "  title="iframe example" width="400" height="500" name="mydream"></iframe>
+
+<a href="https://dictionary.cambridge.org/dictionary/english/finance" target="mydream">w3schools</a>
+<p>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.</p>
+<p>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.</p>
+
+</body>
+</html>
