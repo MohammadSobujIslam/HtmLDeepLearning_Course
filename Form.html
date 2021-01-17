@@ -23,13 +23,29 @@
            border: 4px solid rebeccapurple;
            background-color: aqua;
                   }
+
+        #inputid{
+            color: greenyellow;
+            background-color: deeppink;
+            border: 3px solid black;
+            padding: 40px;
+            text-align: center;
+        }
+        #inputid:hover{
+            background-color: green;
+            color: white;
+            border: 4px solid deeppink
+        }
+
+
+
    </style>
 </head>
 <body>
     <h1 id="headingone">HTML Froms Creating Procedure AlL</h1>
     <form >
         <label for="fname">First Name:</label><br>
-        <input type="text"   id="fname" value="Firstname">
+        <input type="text"   id="fname" autofocus >
         <br><br>
         <label for="lname" >Last Name:</label><br>
         <input type="text" id="lname" value="Lastname">
@@ -153,7 +169,7 @@ a
 <form action="/HtmlClass.html" 
 oninput="x.value=parseInt(a.value)+parseInt(b.value)">
     0
-    <input type="range"  id="a" name="a" value="50">
+    <input type="range"  id="am" name="a" value="50">
     100+
     <input type="number"  id="b" name="b" value="50">
     =
@@ -182,6 +198,236 @@ oninput="x.value=parseInt(a.value)+parseInt(b.value)">
 <p><strong>Note:</strong> The output element is not supported in Edge prior version 13.</p>
 
 </form>
+<h1>work is done</h1>
+<h1>Start is start</h1>
+<h1 id="inputid">HTML Input Types</h1>
+<h1>Input Type all step learning here! </h1>
+<h2>Text field work</h2>
+<p>The <strong>input type="text"</strong> defines a one line text input field:</p>
+<form action="/Image.html">
+    <label for="firstname">First Name:</label><br>
+    <input type="text" id="firstname" name="fname"><br>
+    <label for="lastname" >Last Name:</label><br>
+    <input type="text" name="lname" id="lastname"><br>
+    <input type="submit" value="SubmitFinal"><br>
+    <p>Note that the form itself is not visible.</p>
+<p>Also note that the default width of a text field is 20 characters.</p>
+
+
+</form>
+<h2>Password field</h2>
+
+<p>The <strong>input type="password"</strong> defines a password field:</p>
+<form action="Basic.html">
+    <label for="username">Username:</label><br>
+    <input type="text" name="username" id="username"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" name="email" id="email"><br>
+    <label for="password">Password:</label><br>
+    <input type="password" name="passw" id="password"><br>
+    <input type="submit">
+    <input type="reset">
+</form>
+<h2>Radio Buttons</h2>
+
+<p>The <strong>input type="radio"</strong> defines a radio button:</p>
+<form action="Image.html">
+    <input type="radio" id="male"  name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" name="gender" id="female" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" name="gender" id="other" value="other">
+    <label for="other">Other</label>
+</form>
+
+<h2>Checkboxes</h2>
+<p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+
+<form action="/Layouth.html">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label><br><br>
+  <input type="submit" value="Submit">
+</form>
+<h2>Input Button</h2>
+<input type="button" name="button" onclick="alert('Hi mohammad sobuj')" value="Tach me!">
+
+<h2>Show a Color Picker</h2>
+
+<p>The <strong>input type="color"</strong> is used for input fields that should contain a color.</p>
+<form action="greatMa.jpeg">
+    <label for="favaouritecolor">Select your favourite color:</label>
+    <input type="color" id="favouritecolor" name="fcolor" value="#ff0000">
+    <input type="submit" value="Submit">
+
+</form>
+<p><b>Note:</b> type="color" is not supported in Internet Explorer 11 or Safari 9.1 (or earlier).</p>
+<h2>Date Field</h2>
+
+<p>The <strong>input type="date"</strong> is used for input fields that should contain a date.</p>
+<form action="first.html">
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday">
+    <input type="submit" >
+</form>
+<h2>Date Field Restrictions</h2>
+
+<p>Use the min and max attributes to add restrictions to dates:</p>
+<form action="Image.html">
+    <label for="datemax">Enter a Date before 1980-01-01:</label>
+    <input type="date" name="datemax" id="datemax" max="1979-12-31">
+    <br>
+    <label for="datemin">Enter a Date after 2001-0-01</label>
+    <input type="date" id="datemin" name="datemin" min="2001-01-01">
+    <br>
+    <input type="submit" value="Submit">
+
+</form>
+<h2>Local Date Field</h2>
+
+<p>The <strong>input type="datetime-local"</strong> specifies a date and time input field, with no time zone.</p>
+<form action="Image.html">
+    <label for="birthday">Birthday (date and time):</label>
+    <input type="datetime-local" id="birthday" name="birthdaytime">
+    <br>
+    <input type="submit" value="Submit">
+    <p><strong>Note:</strong> type="datetime-local" is not supported in Firefox, Safari or Internet Explorer 12 (or earlier).</p>
+</form>
+
+<h2>Email Field</h2>
+
+<p>The <strong>input type="email"</strong> is used for input fields that should contain an e-mail address:</p>
+
+<form action="/action_page.php">
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email">
+  <input type="submit" value="Submit">
+</form>
+<h1>File upload</h1>
+
+<p>Show a file-select field which allows a file to be chosen for upload:</p>
+<form action="HtmLlayout.html">
+    <label for="myfile">Selec a file:</label>
+    <input type="file" id="myfile" name="myfile" multiple>
+    <br><br>
+    <label for="monthyear">Birthday month and year:</label>
+    <input type="month"  id="monthyear" name="month and year">
+    <br><br>
+    <label for="quantity">Quantity (between 1 and 5):</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="5">
+    <br><br>
+    <label for="quantity">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
+  <br><br>
+  <label for="vol">Volume (between 0 and 50):</label>
+  <input type="range" id="vol" name="vol" min="0" max="50">
+  <br><br>
+  <label for="searchin">Search in Google:</label>
+  <input type="search" name="search" id="searchin">
+  <br>
+  <br>
+  <label for="phone">Enter your phone number:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{5}-[0-9]{3}-[0-9]{3}">
+  <br>
+  <label for="appt">Select a time:</label>
+  <input type="time" id="appt" name="appt">
+  <br>
+  <br>
+  <label for="homepage">Add your homepage:</label>
+  <input type="url" id="homepage" name="homepage">
+  <br>
+  <label for="week">Select a week:</label>
+  <input type="week" id="week" name="week">
+  <br>
+  <br>
+    <input type="submit">
+</form>
+
+<h1>The input readonly attribute</h1>
+
+<p>The readonly attribute specifies that an input field should be read-only (cannot be changed):</p>
+
+<form action="/headmad.jpeg">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"  disabled><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe" readonly><br><br>
+  <label for="pin">PIN:</label><br>
+  <input type="text" id="pin" name="pin" maxlength="4" size="6"><br><br>
+  <label for="country_code">Country code:</label>
+  <input type="text" id="country_code" name="country_code"
+  pattern="[A-Za-z]{3}" title="Three letter country code"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<br><br><br>
+<h1 style="color: red;font-size: 40px;text-align: center;">The input list attribute</h1>
+
+<p>The list attribute refers to a datalist element that contains pre-defined options for an input element.</p>
+
+<form action="/Basic.html">
+    <input list="namelist" name="name">
+    <datalist id="namelist">
+        <option value="sobuj"></option>
+        <option value="jihad"></option>
+        <option value="junayed"></option>
+        <option value="mostaqim"></option>
+        <option value="razib"></option>
+        <option value="tasan"></option>
+        <option value="akil"></option>
+
+    </datalist>
+    <input type="submit">
+</form>
+<h1>hi</h1>
+
+<p><b>Note:</b> The datalist tag is not supported in Safari 12.0 (or earlier).</p>
+
+
+<h1>The input form attribute</h1>
+
+<p>The form attribute specifies the form an input element belongs to.</p>
+
+<form action="/action_page.php" id="form1">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>The "Last name" field below is outside the form element, but still part of the form.</p>
+
+<label for="lname">Last name:</label>
+<input type="text" id="lname" name="lname" form="form1">
+<br><br>
+
+<label for="emailid">Email</label>
+<input type="email" name="email" id="emailid" form="form1">
+
+
+<h1>The input formaction attribute</h1>
+
+<p>The formaction attribute specifies the URL of a file that will process the input when the form is submitted.</p>
+
+<form action="/headmad.jpeg">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formaction="/HtmlClass.html" value="Submit as Admin">
+</form>
+<h1>The input formnovalidate attribute</h1>
+
+<form action="/action_page.php">
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email" required><br><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formnovalidate="formnovalidate" value="Submit without validation">
+</form>
+
+<p><strong>Note:</strong> The formnovalidate attribute of the input tag is not supported in Safari 10 (or earlier).</p>
     
 </body>
 </html>

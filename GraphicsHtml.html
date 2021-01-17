@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Graphics </title>
+    <style>
+           h1{
+               color: blueviolet;
+               font-size: 30px;
+           }
+    </style>
+</head>
+<body>
+    <h1>HTML Canvas Graphics </h1>
+    <h2>First HTML canvas Work Here.</h2>
+    <canvas id="myfirstcanvas" width="600" height="300" style="border: 5px solid blue;">
+        Your browsers does not support the Html canvas tag.
+    </canvas>
+    <script>
+        var c=document.getElementById("myfirstcanvas");
+        var ctx=c.getContext("2d");
+        ctx.moveTo(0,0);
+        ctx.lineTo(600,300);
+        ctx.stroke();
+    </script>
+    <br>  <br>  <br>
+    <canvas id="mycanvas" width="500" height="300" style="border: 2px solid green;">
+        Your browsers does not support the Html canvas tag.
+    </canvas>
+    <script>
+        var c=document.getElementById("mycanvas");
+        var ctx=c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(250,145,100,0,2*Math.PI);
+        ctx.stroke();
+    </script>
+    <br>
+    <br>
+    <br>
+    <canvas id="hellobox" width="300" height="120" style="border: 2px solid gray;"></canvas>
+    <script>
+        var a=document.getElementById("hellobox");
+        var c=a.getContext("2d");
+        c.font="40px arival";
+        c.fillText("Hello World",40,70);
+
+    </script>
+<br>
+<br>
+<br>
+<canvas id="hellobox1" width="300" height="120" style="border: 2px solid gray;"></canvas>
+<script>
+    var a=document.getElementById("hellobox1");
+    var c=a.getContext("2d");
+    c.font="40px Arial";
+    c.strokeText("Hello World",40,80);
+
+</script>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML canvas tag.</canvas>
+    
+    <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    // Create gradient
+    var grd = ctx.createLinearGradient(0,0,200,0);
+    grd.addColorStop(0,"red");
+    grd.addColorStop(1,"white");
+    // Fill with gradient
+    ctx.fillStyle = grd;
+    ctx.fillRect(10,10,150,80);
+    </script>
+    <h1>Start in canvas part</h1>
+    <canvas id="mycanvasid1" width="200" height="100" style="border: 2px solid green;"></canvas>
+    <script>
+        var c = document.getElementById("mycanvasid1");
+        var cv=c.getContext("2d");
+        cv.fillStyle = "#112222";
+        cv.fillRect(22,12,150,75);
+    </script>
+    <H1>Using createLinearGradient()</H1>
+    <canvas id="gradienid" width="500" height="300" style="border: 2px solid red;"></canvas>
+    <script>
+        // find canvas with javascript file
+        var canvasfind=document.getElementById("gradienid");
+        var creatgradientobject=canvasfind.getContext('2d');
+         //create gradient here
+        var cgradient=creatgradientobject.createLinearGradient(0,0,400,3);       
+        cgradient.addColorStop(0,"blue");
+        cgradient.addColorStop(1,"red");
+        // Fill with gradient style and draw
+        creatgradientobject.fillStyle=cgradient;
+        creatgradientobject.fillRect(10,10,400,250)
+
+    </script>
+    <h1>Using createRadialGradient() function:</h1>
+    <canvas id="radialid" width="1000" height="600" style="border: 4px solid green;"></canvas>
+    <script>
+        var canvasfind=document.getElementById("radialid");
+        var radojt=canvasfind.getContext("2d");
+        var radialobject=radojt.createRadialGradient(90,100,10,200,150,15);
+        radialobject.addColorStop(0,"red");
+        radialobject.addColorStop(1,"green");
+        radojt.fillStyle=radialobject;
+        radojt.fillRect(40,50,800,600);
+
+    </script>
+    <br>
+    <br>
+
+    <canvas id="mycanvasid" width="300" height="200" style="border: 2px solid #d3d3d3;"></canvas>
+    <script>
+        var canvas=document.getElementById("mycanvasid");
+        var ctx=canvas.getContext("2d");
+        ctx.font="30px Comic Sans MS";
+        ctx.fillStyle="red";
+        ctx.textAlign="center";
+        ctx.fillText("hello word",canvas.width/2,canvas.height/2);
+    </script>
+<br>
+<br>
+<img id="scream" width="820" height="1230"
+src="greatMa.jpeg" alt="The great Mom">
+
+<p>Canvas:</p>
+
+<canvas id="greatmom" width="900" height="1330" style="border: 2px solid #d3d3d3;"></canvas>
+<script>
+    window.onload=function(){
+        var canvas=document.getElementById("greatmom");
+        var ctx=canvas.getContext("2d");
+        var img=document.getElementById("scream");
+        ctx.drawImage(img,10,10);
+
+    }
+
+</script>
+
+</body>
+</html>
